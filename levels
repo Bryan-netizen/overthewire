@@ -1,4 +1,4 @@
- level 0-1 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+ 
  
 
 level 1-2 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
@@ -55,4 +55,19 @@ cat or echo file | nc localhost 30000
 These two options are clear text methods of sending text over the wire.
 
 TRY FOLLOW SUGGESTED COMMANDS.
+
+level 15-16 cluFn7wTiGryunymYOu4RcffSxQluehd
+This level focuses on testing with openssl then submitting level 15 password, test format is : openssl s_client -connect www.feistyduck.com:443
+
+level 16-17 keys ssh 
+This level tested nmap of services running and then openssl testing giving back ssh ke when level 15 password was provided.
+
+level 17-18 kfBf3eYk5BPBRzwjqutbbfE887SVc5Yd
+This level required diff command to compare old password file to new file and showed the edited line.
+
+level 18-19 IueksS7Ubh8G3DCwVzrTd8rAVOwq3M5x
+This level required running ssh and a command attached to it such as ls -la  or cat readme.
+My solution involved piping the command < ls "cat readme" , but the same could have been accomplished with cat readme.
+I also learned that you can spawn a pseudo terminal with /bin/sh bin/bash and run commands.
+This method can also be used with -t on the ssh command.
 
