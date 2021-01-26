@@ -1,0 +1,58 @@
+ level 0-1 boJ9jbbUNNfktd78OOpsqOltutMc3MY1
+ 
+
+level 1-2 CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9
+  
+opening dashed file names requires a redirect to cat in order to show contents.
+In addition bash treats - as stdin.
+
+level 2-3 UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK
+
+Use quotes around space file to select full file.
+
+level 3-4 pIwrPrtPN36QITSp3EQaw936yaFoFgAB
+
+ls -la shows hidden files.
+
+level 4-5 koReBOKuIDDepwhWk7jZC0RTdopnAYKh
+This example requires you to use file -- * to explore the file formats.
+the first - is in the file names the second - is to pipe the command into STDIN and * to denote all.
+:
+level 5-6 DXjZPULLxYr17uwoI01bNLQbtFemEgo7
+This test find switches find * -size 1033c 
+
+level 6-7 HKBPTKQnIay4Fw76bEy8PVxKEDQRKTzs
+This level tests find / test one switch at a time to help narrow down.such as -group -user -size.
+
+level 7-8 cvX2JJa4CFALtqS87jk27qwqGhBM9plV
+This level test for cat < and grep key word.
+
+8-9 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
+This level test a combination of cat , sort and uniq -c (count)
+
+9-10  truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk
+This level tested strings to give the flag.
+
+10-11  The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
+This  level tested abilty to recognize base 64 and echo | base 64 -d
+
+11-12 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
+This level tests the rot13 cipher on the file, alias it for future use.
+
+level 12-13 8ZjyCRiBWFYkneahHwxCv3wb2a1ORpYL 
+hexdump data.txt  > hex is what is currently working.This one was a bit annoying as it involved using xxd -r data.txt, reverse hexdump into binary, when  you check the file with file command it shows you what format is was last in. So it was a series of mv file to said format then running decompress on them with the compress program used. Went on 10 times. Howeevr the technique is real. 
+
+
+level 13-14 4wcYUJFw0k0XLShlDzztnTBHiqxU3b3e
+The password was in etc banddit pass. Had to gain access with ssh key.
+
+level 14 -15 BfMYroe26WYalil77FoDi9qh59eK5xNr
+This one was confusing had to telnet to localost at port 30000 and submit the previous password then gave me password. Also nmap was handy.
+
+2 ways to solve this telnet user port then paste password
+cat or echo file | nc localhost 30000 
+
+These two options are clear text methods of sending text over the wire.
+
+TRY FOLLOW SUGGESTED COMMANDS.
+
