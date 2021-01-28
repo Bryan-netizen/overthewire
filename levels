@@ -71,3 +71,11 @@ My solution involved piping the command < ls "cat readme" , but the same could h
 I also learned that you can spawn a pseudo terminal with /bin/sh bin/bash and run commands.
 This method can also be used with -t on the ssh command.
 
+level 19-20 GbKksEFF4yrVs6il55v6gwY5aVje5f0j
+This level involved using binary to temporarily escalate read priveleges, in file that contained password. So simply ./binary cat file
+
+level 20-21 gE269g2h3mw3pwgrj0Ha9Uoqen1c9DGr
+This level involves dropping password/commands over netcat to listening connection over local host. So set the listener and send instructions, suconnect will acknowlege connection and maintain access, then revert when correct input is provided.
+
+Level 21-22 Yk7owGAcWjwMVRwrTesJEwB7WVOiILLI
+This level requires you to view cronjobs running, the cat the file from source.Then follow the output of the file in the tmp folder.
